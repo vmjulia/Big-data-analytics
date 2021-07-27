@@ -10,7 +10,7 @@ from requests.auth import HTTPBasicAuth
 f = open(os.path.join('UpdatedData', "Output.txt"))
 prev = f.read()
 f.close()
-url = 'https://..../export/api/jobs/updates/json?date=' + prev
+url = 'https://......./json?date=' + prev
 
 r = requests.get(
   url, 
@@ -24,7 +24,7 @@ data = files['jobs']
 
 while True:
  try:
-    url = 'https://..../export/api/jobs/updates/json?token='+ files['token']     
+    url = 'https://......./json?token='+ files['token']     
     r = requests.get(url, auth=HTTPBasicAuth('....', '...'))
     files = r.json()
     data.extend(files['jobs'])
