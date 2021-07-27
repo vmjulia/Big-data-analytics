@@ -1,3 +1,7 @@
+# the script is set to run every 15 min to download data using .bat file
+# data is delivered partially, each return gives token for the next request. date is stored in .txt file in order to fetch the data
+# in the next 15 min session starting from the "correct point of time"
+
 import json 
 import os
 import requests 
